@@ -1,0 +1,271 @@
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: "Helvetica";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    margin: 0;
+  }
+
+  .body {
+    z-index: -1;
+    top: auto;
+  }
+ 
+  .navi {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+    padding: 3vh;
+    transition: .3s;
+    box-shadow: 0 10px 20px #949494;
+  }
+
+  .navi a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1vh
+  }
+  
+  .navi a:hover {
+    background-color: #62d453;
+    color: white;
+    transition: all 300ms;
+    box-shadow: 0 0 20px #62d453;
+  }
+  
+  .navi a.main {
+    background-color: #00d30b;
+    color: white;
+    transition: all 300ms;
+  }
+  
+  .navi a.main:hover {
+    background-color:  #62d453;
+    color: white;
+    transition: all 300ms;
+    box-shadow: 0 0 20px #62d453;
+  }
+  
+  .navi .icon {
+    display: none;
+  }
+  
+  /* Style inputs */
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .contact-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 5%;
+    line-height: 2;
+  }
+
+  .item1 {
+    width: auto;
+    height: 50vh;
+    flex-direction: column;
+    align-content: center;
+    padding: 5%;
+    padding-left: 0;
+  }
+
+  .item23{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  
+  .item2 {
+    display: flex;
+    flex-direction: column;
+    width: 17.5vw;
+    height: 25vh;
+  }
+
+  .item3 {
+    display: flex;
+    flex-direction: column;
+    width: 17.5vw;
+    height: 25vh;
+  }
+
+  .item4 {
+    width: auto;
+    flex-direction: column;
+    height: 50vh;
+    padding: 5%;
+    padding-right: 0;
+  }
+  
+  .top {
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    align-items: center;
+  }
+  
+  #logo {
+    width: 25vw;
+    padding: 5vw;
+  }
+
+  .logos {
+    flex-direction: row;
+    justify-content: center;
+    height: 5vh;
+    padding: 5vh;
+  }
+  
+  .intro {
+    padding-left: 5vw;
+    border-left: 2px solid #62d453;
+  }
+ 
+@media screen and (max-width: 1150px) {
+    .navi {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      
+      padding: 0;
+      height: 8vh;
+    }
+    .navi a {
+      display: none;
+    }
+    .navi a.icon {
+      display: flex;
+      justify-content: center;
+    }
+    .body {
+      padding-left: width 10%;
+      padding-right: width 10%;
+    }
+    .contact-grid {
+      flex-direction: column;
+      height: auto;
+    }
+    .item1 {
+      padding: 0;
+      height: auto;
+    }
+  
+    .item23 {
+      flex-direction: column;
+    }
+    .item2, .item3 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item4 {
+      padding: 0;
+      padding-top: 5vh;
+      padding-bottom: 15vh;
+      height: auto;
+      order: 1;
+    }
+
+    .subject, .fname {
+      width: 70vw;
+    }
+    
+    .top {
+      flex-direction: column;
+      padding-top: 10vh;
+      height: auto;
+      min-height: 80vh;
+     
+    }
+
+    #logo {
+      height: 30vh;
+      padding: 5%;
+      width: auto;
+    }
+
+    .intro {
+      border-top: 2px solid #62d453;
+      padding-top: 5vh;
+      padding-left: 0;
+      border-left: none;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1150px) {
+  .navi.responsive {
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+  }
+
+  .navi.responsive:not(.icon) {
+    transition: .3s;
+  }
+  
+  .navi.responsive a {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+
+h2 {
+  font-size: 24px;
+  padding-top: 15vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 2;
+}
+
+p1 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+p2 {
+  font-size: large;
+  line-height: 2;
+}
