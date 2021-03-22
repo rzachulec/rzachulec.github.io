@@ -223,7 +223,19 @@
     width: 100vw;
     margin-top: 15vh;
   }
-  
+
+  .sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1eb475a8;
+    box-shadow: 0 0 10vh #1eb476;
+    padding: 0;
+    width: 100vw;
+    margin-top: 15vh;
+  }  
 
   .team {
     width: 10vw;
@@ -324,6 +336,11 @@
     }
     .subject, .fname {
       width: 70vw;
+    }
+
+    .previouslogos {
+      max-width: 80vw;
+      height: auto;
     }
     
     .top {
