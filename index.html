@@ -42,12 +42,13 @@
                 Zapraszamy do zapoznania się z projektem i do udziału.
                 <div style="font-size: larger; color: #62d453;">Rekrutacja trwa!</div>
             </p2>
-
-
         </div>
-        <h1>Sponsorzy projektu:</h1>
-        <a href="https://www.ncn.gov.pl/"> <img src="ncn-logo-poziom.png" alt=logo class="logos"></a>
-        <a href="https://pwr.edu.pl/"> <img src="logo pwr.png" alt=logo class="logos"></a>
+    </div>
+    <div class="sponsors">
+    <a href="https://www.ncn.gov.pl/"> <img src="ncn-logo-poziom.png" alt=logo class="logos"></a>
+    <a href="https://pwr.edu.pl/"> <img src="logo pwr.png" alt=logo class="logos"></a>
+    </div>
+    <div class="body">
         <div>
             <h2 id="about">O projekcie</h2>
 
@@ -340,12 +341,14 @@
             }
         </script>
     </div>
-    
+
     <div class="previous">
-        <div><h3 id="previous">Nasze wcześniejsze badania</h3></div>
+        <div>
+            <h3 id="previous">Nasze wcześniejsze badania</h3>
+        </div>
         <div><a href="http://zimnocieplo.pwr.edu.pl/"> <img class="previouslogos" src="logoCZ.png" alt="zimno/ciepło - logo"></a>
-        <a  href="https://sites.google.com/view/bpe-poland"> <img class="previouslogos" src="bpe.png" alt="BPE - logo"></a>
-        <a href="http://cieplozimno.pwr.edu.pl/"> <img class="previouslogos"  src="logo_cieplozimno_white.png" alt="ciepło/zimno - logo"></a>
+            <a href="https://sites.google.com/view/bpe-poland"> <img class="previouslogos" src="bpe.png" alt="BPE - logo"></a>
+            <a href="http://cieplozimno.pwr.edu.pl/"> <img class="previouslogos" src="logo_cieplozimno_white.png" alt="ciepło/zimno - logo"></a>
         </div>
     </div>
 
@@ -382,7 +385,7 @@
                     <label for="subject">
                         <p1>Wiadomość</p1>
                     </label>
-                    <textarea id="subject" name="message" placeholder="Jestem wstępnie zainteresowany(a) udziałem w projekcie lub mam więcej pytań. Proszę o kontakt" style="height:170px"></textarea>
+                    <textarea id="subject" name="message" <?php echo 'message' ?> placeholder="Jestem wstępnie zainteresowany(a) udziałem w projekcie lub mam więcej pytań. Proszę o kontakt" style="height:170px"></textarea>
                     <input type="submit" value="Wyślij">
                 </form>
             </div>
